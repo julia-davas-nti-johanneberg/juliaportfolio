@@ -1,2 +1,2 @@
 # juliaportfolio
- Portfolio for Julia Davås. 
+ Portfolio för Julia Davås. 
