@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+}
+
+main {
+    background-color: blueviolet;
+}
+
+#start {
+    background-color: blanchedalmond;
+    height: 100vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+#välkommen {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: brown;
+    height: 7rem;
+}
+
+#ommig {
+    background-color: coral;
+}
+
+article {
+    display: flex;
+    justify-content:space-between;
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
+#projekt {
+    background-color: darkseagreen;
+}
+
+#kontakt {
+    background-color: darkslategray;
+}
