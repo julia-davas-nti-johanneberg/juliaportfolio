@@ -2,14 +2,78 @@
     margin: 0;
 }
 
+/*
+:root {
+    --header-outer-height: 150px;
+    --header-inner-height: 100px;
+    --header-height-difference: calc(
+        var(--header-outer-height) - var(--header-inner-height)
+    );
+    --color-a:rgb(255, 255, 255);
+    --color-b: rgb(232, 232, 232); 
+    --color-c: rgb(161, 169, 175);
+    --color-d:rgb(105, 123, 142);
+    --color-e:rgb(50, 61, 68);
+    --color-f: rgb(0, 0, 0);
+    --font-family-a: 'Quicksand';
+    --font-family-b: 'Euphoria Script';
+    */
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
 header {
-    background-color: blue;
+
     display: flex;
     justify-content: center;
     position: fixed;
     width: 100vw;
     height: 15vh;
+    background-color: rgb(158, 113, 45);
 }
+
+.topnav {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+#myLinks {
+    background-color: blue;
+}
+
+.topnav a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main {
     background-color: blueviolet;
