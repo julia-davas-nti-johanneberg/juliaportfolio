@@ -21,8 +21,6 @@
 
 
 
-
-
     
 
 
@@ -31,7 +29,7 @@
 
 
 
-
+/* 
 header {
 
     display: flex;
@@ -39,10 +37,10 @@ header {
     position: fixed;
     width: 100vw;
     height: 15vh;
-    background-color: rgb(158, 113, 45);
+    background-color: rgb(158, 113, 45); 
 }
-
-.topnav {
+*/
+/* .topnav {
     background-color: aqua;
     display: flex;
     align-items: center;
@@ -54,26 +52,18 @@ header {
 
 .topnav a {
     text-decoration: none;
+} */
+
+
+
+
+
+
+
+
+.navbar {
+    opacity: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 main {
     background-color: blueviolet;
@@ -82,12 +72,23 @@ main {
 #start {
     background-color: blanchedalmond;
     height: 100vh;
+    background-image: url(/img/jean-philippe-delberghe-75xPHEQBmvA-unsplash\ \(2\).jpg);
+    background-size: cover;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     padding-top: 10rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#start p {
+    margin: 7rem;
 }
 
 #välkommen {
@@ -102,6 +103,17 @@ footer {
 
 #ommig {
     background-color: coral;
+    height: 100vh;
+}
+
+.ommig-icon {
+    width: 2rem;
+}
+
+.article-utbildning {
+    
+    background-color: aqua;
+    padding: 2rem;
 }
 
 article {

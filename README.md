@@ -13,16 +13,15 @@ Moodboard
 Skisser
 
 ## Vecka 11
-Skisser
+Skisser papper
+
+## Vecka 12
+Skisser figma
+
+## Vecka 13
 footer
 header
 meny
-
-## Vecka 12
-
-
-## Vecka 13
-
 
 ## Vecka 14
 Avstämning
@@ -31,10 +30,17 @@ Avstämning
 Påsklov
 
 ## Vecka 16
+nav
+startsida
 
 ## Vecka 17
+om mig
+projekt
+- hover
 
 ## Vecka 18
+kontakt
+mus-funktion
 
 ## Vecka 19
 Redovisning
@@ -44,6 +50,27 @@ Redovisning
 ## Vecka 10
 
 ### Gjort idag. Varför?
+Intro projekt, moodboard, brainstorm, bestämma ide
+
+### Nästa gång
+
+### Problem/Lösningar
+
+## Vecka 15
+
+### Gjort idag. Varför?
+lägga upp en layout 
+
+### Nästa gång
+
+### Problem/Lösningar
+
+## Vecka 16
+
+### Gjort idag. Varför?
+mer detaljerad layout
+nav
+startsida
 
 ### Nästa gång
 
