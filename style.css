@@ -87,8 +87,8 @@ main {
 #intro {
     height: 100vh;
     padding-top: 15rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
 }
 
 #bebis {
@@ -212,7 +212,6 @@ footer {
     margin-top: 0.25em;
 }
 
-
 .div-project {
     display: grid;
     grid-template-areas: 
@@ -220,7 +219,7 @@ footer {
     'p4 p5 p6';
 }
 
-#div-div-project {
+.div-div-project {
     display: flex;
     justify-content: center;
 }
@@ -253,6 +252,34 @@ footer {
     text-decoration: none;
 }
 
+
+
+
+
+
+#citat {
+    height: 100vh;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-top: 15rem;
+}
+
+.citat {
+    font-size: 4rem;
+}
+
+#kontakt {
+    background-color: darkslategray;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1000px) {
     .div-project {
         display: grid;
@@ -261,6 +288,19 @@ footer {
         'p4 p3'
         'p5 p6';
     }
+
+    .citat {
+        font-size: 3rem;
+    }
+
+    #bebis {
+        height: 10rem;
+    }
+    
+    #vuxen {
+        height: 10rem;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -274,25 +314,111 @@ footer {
         'p5'
         'p6';
     }
-
     
+    .citat {
+        font-size: 2rem;
+    }
+
+    #citat {
+        height: 100vh;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    #intro {
+        height: 100vh;
+        padding-top: 15rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    #bebis {
+        height: 8rem;
+    }
+    
+    #vuxen {
+        height: 8rem;
+    }
+
 }
 
 
 
 
 
-#citat {
-    height: 100vh;
-    padding-left: 20rem;
-    padding-right: 20rem;
-    padding-top: 15rem;
+
+
+
+#da4 {
+    width: 100%;
 }
 
-.citat {
-    font-size: 4rem;
+#da2 {
+    width: 100%;
 }
 
-#kontakt {
-    background-color: darkslategray;
+#da1 {
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px){
+    #da4 {
+        display: block;
+    }
+
+    #da2 {
+        display: none;
+    }
+
+    #da1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    
+    #footersection {
+        display: grid;
+        grid-template-areas: 
+        'fa1 fa2'
+        'fa3 fa4';
+    }
+
+    #da4 {
+        display: none;
+    }
+
+    #da2 {
+        display: block;
+    }
+
+    #da1 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    
+    #footersection {
+        display: grid;
+        grid-template-areas: 
+        'fa1'
+        'fa2'
+        'fa3'
+        'fa4';
+        padding: 1rem 2rem 3rem 2rem;
+    }
+
+    #da4 {
+        display: none;
+    }
+
+    #da2 {
+        display: none;
+    }
+
+    #da1 {
+        display: block;
+    }
 }
