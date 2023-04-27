@@ -74,6 +74,29 @@ main {
     height: 100vh;
     background-image: url(/img/jean-philippe-delberghe-75xPHEQBmvA-unsplash\ \(2\).jpg);
     background-size: cover;
+    padding-top: 10rem;
+}
+
+
+#pil-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+#intro {
+    height: 100vh;
+    padding-top: 15rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+#bebis {
+    height: 15rem;
+}
+
+#vuxen {
+    height: 15rem;
 }
 
 h1 {
@@ -96,35 +119,178 @@ h2 {
     justify-content: center;
 }
 
+
 footer {
     background-color: brown;
-    height: 7rem;
+    padding: 5rem;
+    background-image: url(/img/jean-philippe-delberghe-75xPHEQBmvA-unsplash\ \(2\).jpg);
+    background-size: cover;
 }
+
+#footer-namn {
+    padding: 0;
+}
+
 
 #ommig {
-    background-color: coral;
+    background-color: rgb(204, 172, 221);
     height: 100vh;
+    margin: 0;
 }
 
+
 .ommig-icon {
-    width: 2rem;
+    width: 4rem;
+    color: blue;
 }
 
 .article-utbildning {
-    
-    background-color: aqua;
-    padding: 2rem;
+    padding: 0rem;
 }
 
-article {
+#ommig-box {
     display: flex;
     justify-content:space-between;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
 }
 
 #projekt {
-    background-color: darkseagreen;
+    background-color: rgb(206, 161, 201);
+    padding-bottom: 10rem;
+}
+
+.image {
+    position: relative;
+    width: 20rem;
+    margin: 0.5rem;
+}
+
+.image_img {
+    display: block;
+    width: 100%;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85.5%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding: 3rem;
+    opacity: 0;
+    transition: opacity 0.25s;
+    backdrop-filter: blur(3px);
+}
+
+.image_overlay > * {
+    transform: translateY(2rem);
+    transition: transform 0.25s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+}
+
+.image_overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image_title {
+    font-size: 2em;
+}
+
+.image_description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+.div-project {
+    display: grid;
+    grid-template-areas: 
+    'p1 p2 p3'
+    'p4 p5 p6';
+}
+
+#div-div-project {
+    display: flex;
+    justify-content: center;
+}
+
+.project1 {
+    grid-area: p1;
+}
+
+.project2 {
+    grid-area: p2;
+}
+
+.project3 {
+    grid-area: p3;
+}
+
+.project4 {
+    grid-area: p4;
+}
+
+.project5 {
+    grid-area: p5;
+}
+
+.project6 {
+    grid-area: p6;
+}
+
+#section-posters a, #three-posters a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .div-project {
+        display: grid;
+        grid-template-areas: 
+        'p1 p2'
+        'p4 p3'
+        'p5 p6';
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .div-project {
+        display: grid;
+        grid-template-areas: 
+        'p1'
+        'p2'
+        'p3'
+        'p4'
+        'p5'
+        'p6';
+    }
+
+    
+}
+
+
+
+
+
+#citat {
+    height: 100vh;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 15rem;
+}
+
+.citat {
+    font-size: 4rem;
 }
 
 #kontakt {
