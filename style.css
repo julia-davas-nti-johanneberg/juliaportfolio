@@ -84,6 +84,10 @@ main {
     margin-top: 15rem;
 }
 
+#pil-bild {
+    height: 4rem;
+}
+
 #intro {
     height: 100vh;
     padding-top: 15rem;
@@ -270,12 +274,46 @@ footer {
 
 #kontakt {
     background-color: darkslategray;
+    min-height: 100vh;
+    padding-bottom: 5rem;
 }
 
 
+.contact-d1 {
+    grid-area: d1;
+    padding: 1rem;
+}
 
+.contact-d2 {
+    grid-area: d2;
+    padding: 1rem;
+}
 
+.contact-d3 {
+    grid-area: d3;
+    padding: 1rem;
+}
 
+.contact-d4 {
+    grid-area: d4;
+    padding: 1rem;
+}
+
+.contact-article {
+    display: grid;
+    grid-template-areas: 
+    'd1 d2 d3 d4';
+    padding: 4rem 4.5rem 0rem 4.5rem;
+}
+
+.div-d h5 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-text {
+    text-align: center;
+}
 
 
 
@@ -364,6 +402,7 @@ footer {
 @media screen and (min-width: 1000px){
     #da4 {
         display: block;
+        padding-top: 4rem;
     }
 
     #da2 {
@@ -390,10 +429,18 @@ footer {
 
     #da2 {
         display: block;
+        padding-top: 1rem;
     }
 
     #da1 {
         display: none;
+    }
+
+    .contact-article {
+        grid-template-areas: 
+        'd1 d2'
+        'd3 d4';
+        padding: 2rem 4.5rem 0rem 4.5rem;
     }
 
 }
@@ -420,5 +467,17 @@ footer {
 
     #da1 {
         display: block;
+        padding-top: 3rem;
     }
+
+    .contact-article {
+        display: grid;
+        grid-template-areas: 
+        'd1'
+        'd2'
+        'd3'
+        'd4';
+        padding: 3rem 4.5rem 0rem 4.5rem;
+    }
+
 }
