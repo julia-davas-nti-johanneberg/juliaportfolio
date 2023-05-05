@@ -69,19 +69,38 @@ main {
     background-color: blueviolet;
 }
 
+
+#first {
+    font-size: 12rem;
+    font-family: 'Assistant';
+    font-weight: 800;
+    opacity: 50%;
+}
+
+#first2 {
+    font-size: 5rem;
+    font-family: 'Assistant';
+    font-weight:100;
+    opacity: 50%;
+}
+
+h2 {
+    color: aqua;
+}
+
 #start {
     background-color: blanchedalmond;
     height: 100vh;
-    background-image: url(/img/jean-philippe-delberghe-75xPHEQBmvA-unsplash\ \(2\).jpg);
+    background-image: url(/img/paul-earle-wVjd0eWNqI8-unsplash.jpg);
     background-size: cover;
-    padding-top: 10rem;
+    padding-top: 4rem;
 }
 
 
 #pil-div {
     display: flex;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 7rem;
 }
 
 #pil-bild {
@@ -133,6 +152,18 @@ footer {
 
 #footer-namn {
     padding: 0;
+}
+
+#footer-namn {
+    font-size: 4rem;
+    font-family: 'Assistant';
+    font-weight: 800;
+}
+
+#footer-text {
+    font-size: 1rem;
+    font-family: 'Assistant';
+    font-weight:100;
 }
 
 
@@ -303,10 +334,16 @@ footer {
     display: grid;
     grid-template-areas: 
     'd1 d2 d3 d4';
-    padding: 4rem 4.5rem 0rem 4.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 4rem 6rem 0rem 6rem;
 }
 
-.div-d h5 {
+.div-d img{
+    margin-bottom: 2rem;
+    height: 4rem;
+}
+
+.img-div {
     display: flex;
     justify-content: center;
 }
@@ -314,6 +351,15 @@ footer {
 .contact-text {
     text-align: center;
 }
+
+.contact-text a{
+    text-decoration: none;
+    color: black;
+}
+.contact-text a:hover{
+    color: rgb(28, 162, 149);
+}
+
 
 
 
@@ -441,6 +487,7 @@ footer {
         'd1 d2'
         'd3 d4';
         padding: 2rem 4.5rem 0rem 4.5rem;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -478,6 +525,7 @@ footer {
         'd3'
         'd4';
         padding: 3rem 4.5rem 0rem 4.5rem;
+        grid-template-columns: 1fr;
     }
 
 }
