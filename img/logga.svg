@@ -1,69 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1645.72 587.5">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 633.98 137.14">
   <defs>
     <style>
       .cls-1 {
-        letter-spacing: -.01em;
-      }
-
-      .cls-2 {
-        letter-spacing: -.02em;
-      }
-
-      .cls-2, .cls-3, .cls-4 {
-        font-family: Lato-Light, Lato;
-        font-weight: 300;
-      }
-
-      .cls-2, .cls-3, .cls-4, .cls-5 {
-        font-size: 110.15px;
-      }
-
-      .cls-6 {
-        letter-spacing: -.02em;
-      }
-
-      .cls-7, .cls-8, .cls-9, .cls-10 {
-        font-size: 115px;
-      }
-
-      .cls-7, .cls-5 {
-        font-family: Lato-Regular, Lato;
-      }
-
-      .cls-8 {
         font-family: Regina, Regina;
-      }
-
-      .cls-11 {
-        letter-spacing: -.04em;
-      }
-
-      .cls-9 {
-        font-family: AssistantRoman-ExtraBold, Assistant;
-        font-variation-settings: 'wght' 800;
-        font-weight: 700;
-      }
-
-      .cls-3 {
-        letter-spacing: -.05em;
-      }
-
-      .cls-10 {
-        font-family: LindseySignature, 'Lindsey Signature';
-      }
-
-      .cls-12 {
-        letter-spacing: 0em;
-      }
-
-      .cls-13 {
-        letter-spacing: 0em;
+        font-size: 110.15px;
       }
     </style>
   </defs>
-  <text transform="translate(985.51 413.98)"><tspan><tspan class="cls-7" x="0" y="0">J</tspan><tspan class="cls-5" x="51.06" y="0">ULIA </tspan><tspan class="cls-2" x="318.07" y="0">D</tspan><tspan class="cls-3" x="400.13" y="0">AV</tspan><tspan class="cls-4" x="531.66" y="0">ÅS</tspan></tspan></text>
-  <text class="cls-10" transform="translate(144.26 111.38)"><tspan x="0" y="0">J</tspan><tspan class="cls-12" x="57.96" y="0">u</tspan><tspan x="92.69" y="0">l</tspan><tspan class="cls-11" x="112.7" y="0">i</tspan><tspan x="128.34" y="0">a D</tspan><tspan class="cls-1" x="273.47" y="0">a</tspan><tspan x="316.01" y="0">v</tspan><tspan class="cls-13" x="347.98" y="0">å</tspan><tspan x="391.8" y="0">s</tspan></text>
-  <text class="cls-8" transform="translate(0 286.28)"><tspan x="0" y="0">Julia Davås</tspan></text>
-  <text class="cls-9" transform="translate(84.38 558.75)"><tspan x="0" y="0">JULIA </tspan><tspan class="cls-12" x="324.53" y="0">D</tspan><tspan class="cls-6" x="397.21" y="0">AV</tspan><tspan x="525.55" y="0">ÅS</tspan></text>
+  <text class="cls-1" transform="translate(0 81.51)"><tspan x="0" y="0">Julia Davås</tspan></text>
 </svg>

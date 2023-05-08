@@ -71,17 +71,13 @@ main {
 
 
 #first {
-    font-size: 12rem;
-    font-family: 'Assistant';
-    font-weight: 800;
-    opacity: 50%;
+    width: 80vw;
 }
 
 #first2 {
-    font-size: 5rem;
+    font-size: 2rem;
     font-family: 'Assistant';
     font-weight:100;
-    opacity: 50%;
 }
 
 h2 {
@@ -91,36 +87,36 @@ h2 {
 #start {
     background-color: blanchedalmond;
     height: 100vh;
-    background-image: url(/img/paul-earle-wVjd0eWNqI8-unsplash.jpg);
+    background-image: url(/img/annie-spratt-0ZPSX_mQ3xI-unsplash\ 2.jpg);
     background-size: cover;
-    padding-top: 4rem;
+    padding-top: 15rem;
 }
 
 
 #pil-div {
     display: flex;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 8rem;
+}
+
+#logga-div {
+    display: flex;
+    justify-content: center;
 }
 
 #pil-bild {
     height: 4rem;
 }
 
-#intro {
-    height: 100vh;
-    padding-top: 15rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
-}
 
-#bebis {
-    height: 15rem;
-}
 
-#vuxen {
-    height: 15rem;
-}
+
+
+
+
+
+
+
 
 h1 {
     display: flex;
@@ -137,59 +133,104 @@ h2 {
     margin: 7rem;
 }
 
-#välkommen {
-    display: flex;
-    justify-content: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer {
     background-color: brown;
     padding: 5rem;
-    background-image: url(/img/jean-philippe-delberghe-75xPHEQBmvA-unsplash\ \(2\).jpg);
+    background-image: url(/img/annie-spratt-0ZPSX_mQ3xI-unsplash\ 2.jpg);
     background-size: cover;
 }
 
-#footer-namn {
-    padding: 0;
+
+#footer-logga-div {
+    display: flex;
+    justify-content: center;
 }
 
-#footer-namn {
-    font-size: 4rem;
-    font-family: 'Assistant';
-    font-weight: 800;
+#footer-logga {
+    width: 30vw;
 }
 
-#footer-text {
+#footer-rubrik {
     font-size: 1rem;
     font-family: 'Assistant';
-    font-weight:100;
+    font-weight:lighter;
 }
+
+
+
+
+
+
 
 
 #ommig {
     background-color: rgb(204, 172, 221);
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
 }
 
 
-.ommig-icon {
-    width: 4rem;
-    color: blue;
+.ommig-article {
+    max-width: 20rem;
 }
 
-.article-utbildning {
-    padding: 0rem;
+.utbildning {
+    grid-area: ut;
+    padding: 3rem;
+}
+
+.områden {
+    grid-area: om;
+    padding: 3rem;
+}
+
+.program {
+    grid-area: pr;
+    padding: 3rem;
+}
+
+.certifikat {
+    grid-area: ce;
+    padding: 3rem;
 }
 
 #ommig-box {
+    display: grid;
+    grid-template-areas: 
+    'ut om pr ce';
     display: flex;
     justify-content:space-between;
     margin-right: 5rem;
     margin-left: 5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
+
+.ommig-text {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 
 #projekt {
     background-color: rgb(206, 161, 201);
@@ -283,10 +324,6 @@ footer {
     grid-area: p6;
 }
 
-#section-posters a, #three-posters a {
-    text-decoration: none;
-}
-
 
 
 
@@ -300,7 +337,8 @@ footer {
 }
 
 .citat {
-    font-size: 4rem;
+    font-size: 6rem;
+    text-align: center;
 }
 
 #kontakt {
@@ -458,16 +496,12 @@ footer {
     #da1 {
         display: none;
     }
+
+
+
 }
 
 @media screen and (max-width: 1100px){
-    
-    #footersection {
-        display: grid;
-        grid-template-areas: 
-        'fa1 fa2'
-        'fa3 fa4';
-    }
 
     #da4 {
         display: none;
@@ -490,19 +524,31 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
-}
 
-@media screen and (max-width: 600px){
+    #footer-logga {
+        width: 40vw;
+    }
     
-    #footersection {
+    #pil-div {
+        margin-top: 12rem;
+    }
+
+    #ommig-box {
         display: grid;
         grid-template-areas: 
-        'fa1'
-        'fa2'
-        'fa3'
-        'fa4';
-        padding: 1rem 2rem 3rem 2rem;
+        'ut om'
+        'pr ce';
     }
+
+    .ommig-article {
+        max-width: 30rem;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    
+
 
     #da4 {
         display: none;
@@ -527,5 +573,46 @@ footer {
         padding: 3rem 4.5rem 0rem 4.5rem;
         grid-template-columns: 1fr;
     }
+    
+    #footer-logga {
+        width: 60vw;
+    }
+    
+    #footer-rubrik {
+        font-size: 1.2rem;
+    }
 
+    #pil-div {
+        margin-top: 16rem;
+    }
+
+    #ommig-box {
+        display: grid;
+        grid-template-areas: 
+        'ut'
+        'om'
+        'pr'
+        'ce';
+        padding-bottom: 5rem;
+    }
+
+    .ommig-article {
+        max-width: 70vw;
+    }
+
+    .utbildning {
+        padding: 1rem;
+    }
+
+    .områden {
+        padding: 1rem;
+    }
+
+    .program {
+        padding: 1rem;
+    }
+
+    .certifikat {
+        padding: 1rem;
+    }
 }
