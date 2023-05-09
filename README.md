@@ -25,53 +25,22 @@ meny
 
 ## Vecka 14
 Avstämning
+nav
+om mig, kontakt
 
 ## Vecka 15
 Påsklov
 
 ## Vecka 16
-nav
-startsida
+layout
+responsivitet
 
 ## Vecka 17
-om mig
-projekt
-- hover
+responsivitet
 
 ## Vecka 18
-kontakt
-mus-funktion
+färger
+fonter
 
 ## Vecka 19
 Redovisning
-
-# Dokumentation arbetsprocess
-
-## Vecka 10
-
-### Gjort idag. Varför?
-Intro projekt, moodboard, brainstorm, bestämma ide
-
-### Nästa gång
-
-### Problem/Lösningar
-
-## Vecka 15
-
-### Gjort idag. Varför?
-lägga upp en layout 
-
-### Nästa gång
-
-### Problem/Lösningar
-
-## Vecka 16
-
-### Gjort idag. Varför?
-mer detaljerad layout
-nav
-startsida
-
-### Nästa gång
-
-### Problem/Lösningar

@@ -2,64 +2,32 @@
     margin: 0;
 }
 
-/*
+
 :root {
-    --header-outer-height: 150px;
-    --header-inner-height: 100px;
-    --header-height-difference: calc(
-        var(--header-outer-height) - var(--header-inner-height)
-    );
-    --color-a:rgb(255, 255, 255);
-    --color-b: rgb(232, 232, 232); 
-    --color-c: rgb(161, 169, 175);
-    --color-d:rgb(105, 123, 142);
-    --color-e:rgb(50, 61, 68);
-    --color-f: rgb(0, 0, 0);
-    --font-family-a: 'Quicksand';
-    --font-family-b: 'Euphoria Script';
-    */
+    --color-a:rgb(0, 0, 0);
+    --color-b: rgb(233, 179, 132); 
+    --color-c: rgb(133, 180, 216);
+    --color-d:rgb(254, 245, 232);
 
-
-
-    
-
-
-
-
-
-
-
-/* 
-header {
-
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100vw;
-    height: 15vh;
-    background-color: rgb(158, 113, 45); 
-}
-*/
-/* .topnav {
-    background-color: aqua;
-    display: flex;
-    align-items: center;
+    --font-family-a: 'Assistant';
 }
 
-#myLinks {
-    background-color: blue;
+
+.rubrik1 {
+    color: var(--color-b);
+    font-family: var(--font-family-a);
 }
 
-.topnav a {
-    text-decoration: none;
-} */
+.rubrik2 {
+    color: var(--color-c);
+    font-family: var(--font-family-a);
+    margin-bottom: 4rem;
+}
 
-
-
-
-
-
-
+.rubrik3 {
+    color: var(--color-a);
+    font-family: var(--font-family-a);
+}
 
 .navbar {
     opacity: 50%;
@@ -76,7 +44,7 @@ main {
 
 #first2 {
     font-size: 2rem;
-    font-family: 'Assistant';
+    font-family: var(--font-family-a);
     font-weight:100;
 }
 
@@ -179,7 +147,7 @@ footer {
 
 
 #ommig {
-    background-color: rgb(204, 172, 221);
+    background-color: var(--color-a);
     min-height: 100vh;
     margin: 0;
 }
@@ -222,6 +190,13 @@ footer {
 
 .ommig-text {
     text-align: center;
+    font-family: var(--font-family-a);
+    color: var(--color-d);
+}
+
+.ommig-rubrik {
+    font-family: var(--font-family-a);
+    color: var(--color-d);
 }
 
 
@@ -233,7 +208,7 @@ footer {
 
 
 #projekt {
-    background-color: rgb(206, 161, 201);
+    background-color: var(--color-d);
     padding-bottom: 10rem;
 }
 
@@ -253,7 +228,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 85.5%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
@@ -281,11 +256,15 @@ footer {
 
 .image_title {
     font-size: 2em;
+    font-family: var(--font-family-a);
+    color: var(--color-d);
 }
 
 .image_description {
     font-size: 1.25em;
     margin-top: 0.25em;
+    font-family: var(--font-family-a);
+    color: var(--color-d);
 }
 
 .div-project {
@@ -334,19 +313,21 @@ footer {
     padding-left: 12rem;
     padding-right: 12rem;
     padding-top: 15rem;
+    background-color: var(--color-a);
 }
 
 .citat {
     font-size: 6rem;
     text-align: center;
+    font-family: var(--font-family-a);
+    color: var(--color-c);
 }
 
 #kontakt {
-    background-color: darkslategray;
     min-height: 100vh;
     padding-bottom: 5rem;
+    background-color: var(--color-d);
 }
-
 
 .contact-d1 {
     grid-area: d1;
@@ -388,6 +369,7 @@ footer {
 
 .contact-text {
     text-align: center;
+    color: var(--color-a);
 }
 
 .contact-text a{
@@ -395,7 +377,7 @@ footer {
     color: black;
 }
 .contact-text a:hover{
-    color: rgb(28, 162, 149);
+    color: var(--color-b);
 }
 
 
