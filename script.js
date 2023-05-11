@@ -4,8 +4,12 @@
 
 
 
-const card = document.querySelector(".card");
+// let card = document.querySelector(".card");
 
-card.addEventListener("click", () -> {
-    card.classList.toggle("flipCard");
-   });
+
+// function cardFlipper() {flipcar
+//     card.classList.toggle('d')
+//     console.log('flip flip flip')
+// }
+
+// card.addEventListener('click', cardFlipper)
