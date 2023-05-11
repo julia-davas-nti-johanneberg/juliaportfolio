@@ -235,15 +235,14 @@ footer {
 }
 
 .flip-container {
-    padding-top: 150rem;
     position: absolute;
-    top: 50%;
+    top: 207%;
     left: 50%;
     transform: translate(-50%, -50%);
     perspective: 1200;
 }
 
-.card:hover .card {
+.card:hover {
     transform: rotateY(-180deg);
 }
 
