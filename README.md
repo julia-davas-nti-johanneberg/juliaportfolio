@@ -43,4 +43,5 @@ färger
 fonter
 
 ## Vecka 19
+testning contrast checker, webbläsare
 Redovisning

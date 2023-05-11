@@ -13,13 +13,26 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .rubrik1 {
-    color: var(--color-b);
+    color: var(--color-d);
     font-family: var(--font-family-a);
 }
 
 .rubrik2 {
-    color: var(--color-c);
+    color: var(--color-a);
     font-family: var(--font-family-a);
     margin-bottom: 4rem;
 }
@@ -31,10 +44,6 @@
 
 .navbar {
     opacity: 50%;
-}
-
-main {
-    background-color: blueviolet;
 }
 
 
@@ -198,6 +207,81 @@ footer {
     font-family: var(--font-family-a);
     color: var(--color-d);
 }
+
+
+#bild {
+    background-color: var(--color-a);
+}
+
+.bild-julia {
+    width: 30rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bild {
+    height: 100vh;
+}
+
+.flip-container {
+    padding-top: 150rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1200;
+}
+
+.flip-container:hover .card {
+    transform: rotateY(-180deg);
+}
+
+.card.flipCard {
+    transform: rotateY('-180deg');
+}
+
+.card {
+    width: 640px;
+    height: 480px;
+    transition: all 700ms ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: url(./img/bild22.jpg) no-repeat center/cover;
+}
+
+.back {
+    background: url(./img/bild11.jpg) no-repeat center/cover;
+    transform: rotateY(-180deg);
+}
+
+
+
+
+
+
+
 
 
 
@@ -374,7 +458,8 @@ footer {
 
 .contact-text a{
     text-decoration: none;
-    color: black;
+    color:var(--color-a);
+    font-family: var(--font-family-a);
 }
 .contact-text a:hover{
     color: var(--color-b);
@@ -403,6 +488,10 @@ footer {
     
     #vuxen {
         height: 10rem;
+    }
+
+    #bild {
+        display: none;
     }
 
 }
@@ -525,6 +614,11 @@ footer {
     .ommig-article {
         max-width: 30rem;
     }
+
+    .flip-container {
+        display: none;
+    }
+
 
 }
 
