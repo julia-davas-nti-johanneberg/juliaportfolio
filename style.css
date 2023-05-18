@@ -2,7 +2,6 @@
     margin: 0;
 }
 
-
 :root {
     --color-a:rgb(0, 0, 0);
     --color-b: rgb(254, 151, 125);
@@ -17,47 +16,16 @@
     );
 }
 
-
-
-#arrow {
-    
-}
-
-#arrow-img {
-    width: 4rem;
-}
-
-
-
-
-
-
-
-.bottomMenu {
-    position: fixed;
-    top: 80%;
-    right: 2rem;
+h1 {
     display: flex;
-    justify-content: flex-end;
-    bottom: 0;
-    z-index: 1;
-    transition: all .5s;
-}
-.hide {
-    opacity:0;
-   
-}
-.show {
-    opacity:1;
-  
+    justify-content: center;
+    padding-top: 10rem;
 }
 
-
-
-
-
-
-
+h2 {
+    display: flex;
+    justify-content: center;
+}
 
 /* header */
 
@@ -78,6 +46,7 @@
     background-color: var(--color-c);
     background-size: cover;
     z-index: 2;
+    opacity: 90%;
 }
 
 .header-inner {
@@ -212,48 +181,7 @@ a:hover {
     margin-top: 3rem;
 }
 
-
-
-
-
-
-
-
-
-.rubrik1 {
-    color: var(--color-d);
-    font-family: var(--font-family-a);
-}
-
-.rubrik2 {
-    color: var(--color-a);
-    font-family: var(--font-family-a);
-    margin-bottom: 4rem;
-}
-
-.rubrik3 {
-    color: var(--color-a);
-    font-family: var(--font-family-a);
-}
-
-.navbar {
-    opacity: 50%;
-}
-
-
-#first {
-    width: 80vw;
-}
-
-#first2 {
-    font-size: 2rem;
-    font-family: var(--font-family-a);
-    font-weight: 100;
-}
-
-h2 {
-    color: aqua;
-}
+/* heroimg */
 
 #start {
     background-color: blanchedalmond;
@@ -262,7 +190,6 @@ h2 {
     background-size: cover;
     padding-top: 12rem;
 }
-
 
 #pil-div {
     display: flex;
@@ -277,76 +204,26 @@ h2 {
 
 #pil-bild {
     height: 4rem;
+
 }
 
-
-
-
-
-
-
-
-
-
-
-h1 {
-    display: flex;
-    justify-content: center;
-    padding-top: 10rem;
+#first {
+    width: 80vw;
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
+#first2 {
+    font-size: 2rem;
+    font-family: var(--font-family-a);
+    font-weight: 100;
 }
 
-#start p {
-    margin: 7rem;
+/* om mig */
+
+
+.rubrik1 {
+    color: var(--color-d);
+    font-family: var(--font-family-a);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: brown;
-    padding: 5rem;
-    background-image: url(/img/heroimg.jpg);
-    background-size: cover;
-}
-
-
-#footer-logga-div {
-    display: flex;
-    justify-content: center;
-}
-
-#footer-logga {
-    width: 30vw;
-}
-
-#footer-rubrik {
-    font-size: 1rem;
-    font-family: 'Assistant';
-    font-weight:lighter;
-}
-
-
-
-
-
-
 
 
 #ommig {
@@ -407,22 +284,6 @@ footer {
     background-color: var(--color-a);
 }
 
-.bild-julia {
-    width: 30rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #bild {
     height: 45rem;
@@ -473,17 +334,15 @@ footer {
 
 
 
+/* projekt */
+.rubrik2 {
+    color: var(--color-a);
+    font-family: var(--font-family-a);
+    margin-bottom: 4rem;
+}
 
 
-
-
-
-
-
-
-
-
-
+ 
 #projekt {
     background-color: var(--color-d);
     padding-bottom: 10rem;
@@ -581,10 +440,6 @@ footer {
 }
 
 
-
-
-
-
 #citat {
     height: 100vh;
     padding-left: 12rem;
@@ -599,6 +454,15 @@ footer {
     font-family: var(--font-family-a);
     color: var(--color-c);
 }
+
+
+
+/* kontakt */
+.rubrik3 {
+    color: var(--color-a);
+    font-family: var(--font-family-a);
+}
+
 
 #kontakt {
     min-height: 100vh;
@@ -674,6 +538,36 @@ footer {
 
 
 
+
+
+/* footer */
+
+footer {
+    background-color: brown;
+    padding: 5rem;
+    background-image: url(/img/heroimg.jpg);
+    background-size: cover;
+}
+
+#footer-logga-div {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-logga {
+    width: 30vw;
+}
+
+#footer-rubrik {
+    font-size: 1rem;
+    font-family: 'Assistant';
+    font-weight:lighter;
+}
+
+
+
+
+/* responsiv design 1 */
 
 @media screen and (min-width: 1100px){
     #da4 {
@@ -773,6 +667,8 @@ footer {
 
 
 }
+
+/* responsiv design 2 */
 
 @media screen and (max-width: 700px){
     
@@ -900,8 +796,34 @@ footer {
     }
 
     #citat {
-        height: 20rem;
+        height: 25rem;
         padding-top: 7rem;
     }
 
+}
+
+
+/* pil upp */
+
+#arrow-img {
+    width: 4rem;
+}
+
+.bottomMenu {
+    position: fixed;
+    top: 80%;
+    right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0;
+    z-index: 1;
+    transition: all .5s;
+}
+.hide {
+    opacity:0;
+   
+}
+.show {
+    opacity:1;
+  
 }
