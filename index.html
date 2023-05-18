@@ -16,8 +16,39 @@
 <body>
 
 
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img id="header-logo" src="img/logo.svg" alt="Logga">
+                </a>
+            </div>
+            <nav class="header-navigation">
+                    <a href="#start">Start</a>
+                    <a href="#ommig">Om mig</a>
+                    <a href="#projekt">Projekt</a>
+                    <a href="#kontakt">Kontakt</a>
+                    <ul class="navLinks">
+                        <li><a class="side-menu-links" href="#start">Start</a></li>
+                        <li><a class="side-menu-links" href="#ommig">Om mig</a></li>
+                        <li><a class="side-menu-links" href="#projekt">Projekt</a></li>
+                        <li><a class="side-menu-links" href="#kontakt">Kontakt</a></li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+            </nav>
+        </div>
+    </header>
 
-<header>
+    <div id="myID" class="bottomMenu hide">
+        <a href="#start"><img id="arrow-img" src="img/arrow-up-circle-fill.svg"></a>
+    </div>
+
+
+<!-- <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +65,7 @@
             </div>
           </div>
       </nav>
-</header>
+</header> -->
         
 
 
@@ -42,7 +73,7 @@
 
         <section id = "start">
             <div id="logga-div">
-                <img id="first" src="/img/logga.svg">
+                <img id="first" src="/img/logo.svg">
             </div>
             <h2 id="first2">PORTFOLIO</h2>
             <div id="pil-div">
@@ -54,9 +85,9 @@
 
         <section id = "ommig">
             <h1 class="rubrik1">OM MIG</h1>
-            <img id="da4" src="img/decoration_a4.svg" alt="Dekoration">
-            <img id="da2" src="img/decoration_a2.svg" alt="Dekoration">
-            <img id="da1" src="img/decoration_a1.svg" alt="Dekoration">
+            <img id="da4" src="img/decoration4_light.svg" alt="Dekoration">
+            <img id="da2" src="img/decoration2_light.svg" alt="Dekoration">
+            <img id="da1" src="img/decoration1_light.svg" alt="Dekoration">
             <article id="ommig-box">
                 <div class="ommig-article utbildning">
                     <h2 class="ommig-rubrik">Utbildning</h2>
@@ -72,19 +103,21 @@
                 </div>
                 <div class="ommig-article certifikat">
                     <h2 class="ommig-rubrik">Certifikat</h2>
-                    <p class="ommig-text">Adobe Illustrator <br> Februari 2023</p>
+                    <p class="ommig-text">Adobe Illustrator, Feb-23 <br> Adobe InDesign, May-23 <br> Adobe Photoshop, May-23</p>
+
+                </div>
+            </article>
+            <article id="bild">
+                <div class="flip-container">
+                    <div class="card">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </div>
                 </div>
             </article>
         </section>
 
-        <section id="bild">
-            <div class="flip-container">
-                <div class="card">
-                    <div class="front"></div>
-                    <div class="back"></div>
-                </div>
-            </div>
-        </section>
+        
 
         <section id = "projekt">
             <h1 class="rubrik2">PROJEKT</h1>
@@ -92,83 +125,83 @@
                 <div class="div-project">
                     <article class="image project1">
                         <div class="flip-card-front">
-                            <img class="image_img" src="img/diego.png" alt="Project">
+                            <img class="image_img" src="img/projects-01.jpg" alt="Project">
                         </div>
                         <div class="image_overlay">
-                            <h3 class="image_title">Diego</h3>
-                            <p class="image_description">Här har vi diego!</p>
+                            <h3 class="image_title">Kungen</h3>
+                            <p class="image_description">Här har vi kungen!</p>
                         </div>
                     </article>
                     <article class="image project2">
                         <div class="flip-card-front">
-                            <img class="image_img" src="img/estelle.png" alt="Project">
+                            <img class="image_img" src="img/projects-03.jpg" alt="Project">
                         </div>
                         <div class="image_overlay">
-                            <h3 class="image_title">Estelle</h3>
-                            <p class="image_description">Här är prinsessan estelle.</p>
+                            <h3 class="image_title">Melissa</h3>
+                            <p class="image_description">Låt mig presentera Melissa!</p>
                         </div>
                     </article>
                     <article class="image project3">
                         <div class="flip-card-front">
-                            <img class="image_img" src="img/melissa.png" alt="Project">
+                            <img class="image_img" src="img/projects-07.jpg" alt="Project">
                         </div>
                         <div class="image_overlay">
-                            <h3 class="image_title">Melissa</h3>
-                            <p class="image_description">Detta är melissa</p>
+                            <h3 class="image_title">Estelle</h3>
+                            <p class="image_description">Detta är prinsessan Estelle.</p>
                         </div>
                     </article>
                     <article class="image project4">
                         <div class="flip-card-front">
-                            <img class="image_img" src="img/victoria.png" alt="Project">
+                            <img class="image_img" src="img/projects-09.jpg" alt="Project">
                         </div>
                         <div class="image_overlay">
-                            <h3 class="image_title">Victoria</h3>
-                            <p class="image_description">Ser du vem detta är?</p>
+                            <h3 class="image_title">Diego</h3>
+                            <p class="image_description">Det här är Diego.</p>
                         </div>
                     </article>
                     <article class="image project5">
                         <div class="flip-card-front">
-                            <img class="image_img" src="img/kungen2.png" alt="Project">
+                            <img class="image_img" src="img/projects-04.jpg" alt="Project">
+                        </div>
+                        <div class="image_overlay">
+                            <h3 class="image_title">Victoria</h3>
+                            <p class="image_description">Ser du vem det är?</p>
+                        </div>
+                    </article>
+                    <article class="image project6">
+                        <div class="flip-card-front">
+                            <img class="image_img" src="img/projects-02.jpg" alt="Project">
                         </div>
                         <div class="image_overlay">
                             <h3 class="image_title">Kungen</h3>
                             <p class="image_description">Kung Karl XVI Gustav</p>
                         </div>
                     </article>
-                    <article class="image project6">
-                        <div class="flip-card-front">
-                            <img class="image_img" src="img/estelle.jpg" alt="Project">
-                        </div>
-                        <div class="image_overlay">
-                            <h3 class="image_title">Estelle igen</h3>
-                            <p class="image_description">Här har vi estelle igen! Känner du igen henne?</p>
-                        </div>
-                    </article>
                     <article class="image project7">
                         <div class="flip-card-front">
-                            <img class="image_img" src="img/kungen.png" alt="Project">
+                            <img class="image_img" src="img/projects-08.jpg" alt="Project">
                         </div>
                         <div class="image_overlay">
-                            <h3 class="image_title">XVI</h3>
-                            <p class="image_description">Kan du hela kungens namn?</p>
+                            <h3 class="image_title">Estelle</h3>
+                            <p class="image_description">Här har vi Estelle igen!</p>
                         </div>
                     </article>
                     <article class="image project8">
                         <div class="flip-card-front">
-                            <img class="image_img" src="img/victoria2.png" alt="Project">
+                            <img class="image_img" src="img/projects-06.jpg" alt="Project">
                         </div>
                         <div class="image_overlay">
-                            <h3 class="image_title">Kronprinsessan</h3>
-                            <p class="image_description">kronprinsessan victoria. </p>
+                            <h3 class="image_title">Ingrid</h3>
+                            <p class="image_description">Här har vi Ingrid.</p>
                         </div>
                     </article>
                     <article class="image project9">
                         <div class="flip-card-front">
-                            <img class="image_img" src="img/ingrid.png" alt="Project">
+                            <img class="image_img" src="img/projects-05.jpg" alt="Project">
                         </div>
                         <div class="image_overlay">
-                            <h3 class="image_title">Ingrid</h3>
-                            <p class="image_description">Detta är ingrid</p>
+                            <h3 class="image_title">Victoria</h3>
+                            <p class="image_description">Kronprinsessan Victoria.</p>
                         </div>
                     </article>
                 </div>
@@ -182,13 +215,13 @@
 
         <section id = "kontakt">
             <h1 class="rubrik3">KONTAKT</h1>
-            <img id="da4" src="img/decoration_a4 copy.svg" alt="Dekoration">
-            <img id="da2" src="img/decoration_a2 copy.svg" alt="Dekoration">
-            <img id="da1" src="img/decoration_a1 copy.svg" alt="Dekoration">
+            <img id="da4" src="img/decoration4_dark.svg" alt="Dekoration">
+            <img id="da2" src="img/decoration2_dark.svg" alt="Dekoration">
+            <img id="da1" src="img/decoration1_dark.svg" alt="Dekoration">
             <article class="contact-article">
                 <div class="contact-d1 div-d">
                     <div class="img-div">
-                        <img class="contact-img" src="/img/envelope (1).svg">
+                        <img class="contact-img" src="/img/envelope.svg">
                     </div>
                     <p class="contact-text"> <a href="mailto:julia.davas@elev.ga.ntig.se">julia.davas@elev.ga.ntig.se</a></p>
                 </div>
@@ -206,7 +239,7 @@
                 </div>
                 <div class="contact-d4 div-d">
                     <div class="img-div">
-                        <img class="contact-img" src="/img/facebook (1).svg">
+                        <img class="contact-img" src="/img/facebook.svg">
                     </div>
                     <p class="contact-text"> <a href="https://m.facebook.com/profile.php?id=100069684943540">Julia Davås</a></p>
                 </div>
@@ -217,7 +250,7 @@
 
     <footer>
         <div id="footer-logga-div">
-            <img id="footer-logga" src="/img/logga.svg">
+            <img id="footer-logga" src="/img/logo.svg">
         </div>
         <h2 id="footer-rubrik">PORTFOLIO</h2>
     </footer>

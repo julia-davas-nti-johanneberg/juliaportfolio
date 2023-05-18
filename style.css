@@ -5,11 +5,26 @@
 
 :root {
     --color-a:rgb(0, 0, 0);
-    --color-b: rgb(233, 179, 132); 
-    --color-c: rgb(133, 180, 216);
+    --color-b: rgb(254, 151, 125);
+    --color-c: rgb(255, 226, 211);
     --color-d:rgb(254, 245, 232);
-
+    --color-e: rgb(255, 209, 184);
     --font-family-a: 'Assistant';
+    --header-outer-height: 8rem;
+    --header-inner-height: 5rem;
+    --header-height-difference: calc(
+        var(--header-outer-height) - var(--header-inner-height)
+    );
+}
+
+
+
+#arrow {
+    
+}
+
+#arrow-img {
+    width: 4rem;
 }
 
 
@@ -17,6 +32,185 @@
 
 
 
+
+.bottomMenu {
+    position: fixed;
+    top: 80%;
+    right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0;
+    z-index: 1;
+    transition: all .5s;
+}
+.hide {
+    opacity:0;
+   
+}
+.show {
+    opacity:1;
+  
+}
+
+
+
+
+
+
+
+
+/* header */
+
+.responsive-wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-outer {
+    height: var(--header-outer-height);
+    position: sticky;
+    top: calc(
+        var(--header-height-difference) * -1);
+    display: flex;
+    align-items: center;
+    background-color: var(--color-c);
+    background-size: cover;
+    z-index: 2;
+}
+
+.header-inner {
+    height: var(--header-inner-height);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    display: block;
+    height: 3rem;
+}
+
+.header.navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-navigation a,
+.header-navigation .burger {
+    font-size: 1.125rem;
+    margin-left: 2.5rem;
+    position: relative;
+}
+
+.header-navigation a {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--color-a);
+    text-decoration: none;
+    font-family: var(--font-family-a);
+}
+
+.header-navigation .burger {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.header-navigation a:hover:after, 
+.header-navigation .burger:after {
+    transform: scalex(1);
+}
+
+.header-navigation a:after,
+.header-navigation .burger:after {
+    transition: 0.5s ease;
+    content:"";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: currentcolor;
+    transform: scalex(0);
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+
+@media (min-width:850px) {
+
+    .header-navigation a {
+        display: inline-block;
+    }
+
+    .header-navigation .burger {
+        display: none;
+    }
+
+    .header-navigation ul {
+        display: none;
+    }
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: -40px;
+    height: 120vh;
+    top: -110vh;
+    background-color: var(--color-e);
+    width: 18rem;
+    padding-top: 10rem;
+    text-align: right;
+    padding-right: 3rem;
+}
+
+.navActive {
+    display: flex;
+    transform: translateY(100vh);
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-b);
+    margin: 5px;
+    border-radius: 25%;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+a:hover {
+    color: var(--color-a);
+}
+
+.side-menu-links {
+    display: block !important;
+    margin-top: 3rem;
+}
 
 
 
@@ -54,7 +248,7 @@
 #first2 {
     font-size: 2rem;
     font-family: var(--font-family-a);
-    font-weight:100;
+    font-weight: 100;
 }
 
 h2 {
@@ -64,16 +258,16 @@ h2 {
 #start {
     background-color: blanchedalmond;
     height: 100vh;
-    background-image: url(/img/annie-spratt-0ZPSX_mQ3xI-unsplash\ 2.jpg);
+    background-image: url(/img/heroimg.jpg);
     background-size: cover;
-    padding-top: 15rem;
+    padding-top: 12rem;
 }
 
 
 #pil-div {
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 #logga-div {
@@ -128,7 +322,7 @@ h2 {
 footer {
     background-color: brown;
     padding: 5rem;
-    background-image: url(/img/annie-spratt-0ZPSX_mQ3xI-unsplash\ 2.jpg);
+    background-image: url(/img/heroimg.jpg);
     background-size: cover;
 }
 
@@ -231,12 +425,12 @@ footer {
 
 
 #bild {
-    height: 100vh;
+    height: 45rem;
 }
 
 .flip-container {
     position: absolute;
-    top: 207%;
+    padding-top: 10rem;
     left: 50%;
     transform: translate(-50%, -50%);
     perspective: 1200;
@@ -251,15 +445,15 @@ footer {
 }
 
 .card {
-    width: 640px;
-    height: 480px;
+    width: 40rem;
+    height: 30rem;
     transition: all 700ms ease-in-out;
     transform-style: preserve-3d;
 }
 
 .front, .back {
-    width: 640px;
-    height: 480px;
+    width: 40rem;
+    height: 30rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -267,11 +461,11 @@ footer {
 }
 
 .front {
-    background: url(./img/bild22.jpg) no-repeat center/cover;
+    background: url(./img/julia_child.jpg) no-repeat center/cover;
 }
 
 .back {
-    background: url(./img/bild11.jpg) no-repeat center/cover;
+    background: url(./img/julia_now.jpg) no-repeat center/cover;
     transform: rotateY(-180deg);
 }
 
@@ -395,7 +589,7 @@ footer {
     height: 100vh;
     padding-left: 12rem;
     padding-right: 12rem;
-    padding-top: 15rem;
+    padding-top: 14rem;
     background-color: var(--color-a);
 }
 
@@ -466,9 +660,40 @@ footer {
 
 
 
+#da4 {
+    width: 100%;
+}
+
+#da2 {
+    width: 100%;
+}
+
+#da1 {
+    width: 100%;
+}
 
 
-@media screen and (max-width: 1000px) {
+
+
+@media screen and (min-width: 1100px){
+    #da4 {
+        display: block;
+        padding-top: 4rem;
+    }
+
+    #da2 {
+        display: none;
+    }
+
+    #da1 {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 1100px){
+
     .div-project {
         display: grid;
         grid-template-areas: 
@@ -489,89 +714,11 @@ footer {
         height: 10rem;
     }
 
-    #bild {
-        display: none;
+
+    #ommig {
+        padding-bottom: 5rem;
     }
 
-}
-
-@media screen and (max-width: 700px) {
-    .div-project {
-        display: grid;
-        grid-template-areas: 
-        'p1'
-        'p2'
-        'p3'
-        'p4'
-        'p5'
-        'p6';
-    }
-    
-    .citat {
-        font-size: 2rem;
-    }
-
-    #citat {
-        height: 100vh;
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
-
-    #intro {
-        height: 100vh;
-        padding-top: 15rem;
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
-
-    #bebis {
-        height: 8rem;
-    }
-    
-    #vuxen {
-        height: 8rem;
-    }
-
-}
-
-
-
-
-
-
-
-
-#da4 {
-    width: 100%;
-}
-
-#da2 {
-    width: 100%;
-}
-
-#da1 {
-    width: 100%;
-}
-
-@media screen and (min-width: 1000px){
-    #da4 {
-        display: block;
-        padding-top: 4rem;
-    }
-
-    #da2 {
-        display: none;
-    }
-
-    #da1 {
-        display: none;
-    }
-
-
-
-}
-
-@media screen and (max-width: 1100px){
 
     #da4 {
         display: none;
@@ -614,8 +761,14 @@ footer {
         max-width: 30rem;
     }
 
-    .flip-container {
-        display: none;
+
+    #bild {
+        height: 40rem;
+    }
+
+    #citat {
+        height: 30rem;
+        padding-top: 8rem;
     }
 
 
@@ -623,7 +776,41 @@ footer {
 
 @media screen and (max-width: 700px){
     
+    .div-project {
+        display: grid;
+        grid-template-areas: 
+        'p1'
+        'p2'
+        'p3'
+        'p4'
+        'p5'
+        'p6';
+    }
+    
+    .citat {
+        font-size: 2rem;
+    }
 
+    #citat {
+        height: 100vh;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    #intro {
+        height: 100vh;
+        padding-top: 15rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    #bebis {
+        height: 8rem;
+    }
+    
+    #vuxen {
+        height: 8rem;
+    }
 
     #da4 {
         display: none;
@@ -668,7 +855,8 @@ footer {
         'om'
         'pr'
         'ce';
-        padding-bottom: 5rem;
+        padding: 3rem 3rem 0rem 3rem;
+        grid-template-columns: 1fr;
     }
 
     .ommig-article {
@@ -690,4 +878,30 @@ footer {
     .certifikat {
         padding: 1rem;
     }
+
+    .header-outer {
+        height: var(--header-outer-height);
+    }
+
+    .card {
+        top: -5rem;
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .front, .back {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    #bild {
+        padding-top: 3.5rem;
+        height: 20rem;
+    }
+
+    #citat {
+        height: 20rem;
+        padding-top: 7rem;
+    }
+
 }
